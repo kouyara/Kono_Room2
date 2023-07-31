@@ -15,32 +15,32 @@ public class OculusControllerInput_Title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // X(右はA) Button押下中
-        bool x_button = OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.LTouch);
-        // Y(右はB) Button押下中
-        bool y_buttonL = OVRInput.Get(OVRInput.Button.Two, OVRInput.Controller.LTouch);
-        // Menu Button押下中
-        bool menu_buttonL = OVRInput.Get(OVRInput.Button.Start, OVRInput.Controller.LTouch);
-        // Thumb Stick押下中
-        bool stickL = OVRInput.Get(OVRInput.Button.PrimaryThumbstick, OVRInput.Controller.LTouch);
-        // Triggerを押下中
-        bool triggerL = OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch);
-        // Grip Buttonを押下中
-        bool gripL = OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch);
+        //// X(右はA) Button押下中
+        //bool x_button = OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.LTouch);
+        //// Y(右はB) Button押下中
+        //bool y_buttonL = OVRInput.Get(OVRInput.Button.Two, OVRInput.Controller.LTouch);
+        //// Menu Button押下中
+        //bool menu_buttonL = OVRInput.Get(OVRInput.Button.Start, OVRInput.Controller.LTouch);
+        //// Thumb Stick押下中
+        //bool stickL = OVRInput.Get(OVRInput.Button.PrimaryThumbstick, OVRInput.Controller.LTouch);
+        //// Triggerを押下中
+        //bool triggerL = OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch);
+        //// Grip Buttonを押下中
+        //bool gripL = OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch);
 
-        // X(右はA) Button押下中
-        bool a_button = OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch);
-        // Y(右はB) Button押下中
-        bool b_button = OVRInput.Get(OVRInput.Button.Two, OVRInput.Controller.RTouch);
-        // Thumb Stick押下中
-        bool stickR = OVRInput.Get(OVRInput.Button.PrimaryThumbstick, OVRInput.Controller.RTouch);
-        // Triggerを押下中
-        bool triggerR = OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch);
-        // Grip Buttonを押下中
-        bool gripR = OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.RTouch);
+        //// X(右はA) Button押下中
+        //bool a_button = OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch);
+        //// Y(右はB) Button押下中
+        //bool b_button = OVRInput.Get(OVRInput.Button.Two, OVRInput.Controller.RTouch);
+        //// Thumb Stick押下中
+        //bool stickR = OVRInput.Get(OVRInput.Button.PrimaryThumbstick, OVRInput.Controller.RTouch);
+        //// Triggerを押下中
+        //bool triggerR = OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch);
+        //// Grip Buttonを押下中
+        //bool gripR = OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.RTouch);
 
         // トリガーボタンが押されたら何らかのアクションを実行
-        if (a_button || b_button)
+        if (OVRInput.Get(OVRInput.Button.Two))
         {
             SceneManager.LoadScene("Game");
         }
